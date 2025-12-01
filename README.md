@@ -1,3 +1,49 @@
+# Vacancy parser: OOP-based service that scrapes job postings from popular aggregators and stores them in PostgreSQL for further analysis and reporting.
+
+## Project Description
+
+The application fetches job vacancies from the [hh.ru](https://hh.ru) platform and saves them to a JSON file.  
+It allows you to:
+- Add vacancies
+- Search vacancies by keywords 🔎
+- Delete vacancies by link
+
+The project is implemented using OOP principles (inheritance, encapsulation, SOLID).
+
+There are also tests that cover the main functionality.
+
+# hh.ru Job Analyzer (PostgreSQL + Python)
+
+This project loads vacancies from hh.ru for 10 major employers and stores them in a PostgreSQL database.  
+After that, it allows you to analyze the data using SQL queries.
+
+---
+
+## Features
+
+- Connecting to the hh.ru API
+- Loading information about employers and their vacancies
+- Storing data in PostgreSQL tables (`employers`, `vacancies`)
+- Vacancy analysis:
+  - Number of vacancies by company
+  - Full list of vacancies (company name, position, salary, link)
+  - Average salary
+  - Vacancies with salaries above the average
+  - Keyword search (for example, "Python")
+
+---
+
+## Technologies Used
+
+- Python 3.13
+- PostgreSQL
+- psycopg2
+- requests
+- dotenv
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 # Курсовая работа: Работа с API hh.ru и JSON-файлом
 
 ## Описание проекта
