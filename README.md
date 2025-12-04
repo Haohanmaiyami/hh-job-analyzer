@@ -1,5 +1,35 @@
 # Vacancy parser: OOP-based service that scrapes job postings from popular aggregators and stores them in PostgreSQL for further analysis and reporting.
 
+## Description (for CV / GitHub / LinkedIn)
+
+**Combined coursework: hh.ru vacancies processing (JSON + PostgreSQL)**  
+
+Two related projects:
+
+### 1. Vacancy parser for hh.ru (OOP + JSON + tests)
+
+- Client for the public hh.ru API.  
+- Fetches job vacancies and saves them to a JSON file.  
+- Allows you to:
+  - add vacancies;
+  - search vacancies by keywords 🔎;
+  - delete vacancies by link.
+- Implemented with OOP principles (inheritance, encapsulation, SOLID).
+- Covered with automated tests using `pytest`.
+
+### 2. hh.ru Job Analyzer (PostgreSQL + Python)
+
+- Loads vacancies from the hh.ru API for ~10 major employers and stores them in a PostgreSQL database.  
+- Uses a `DBManager` class for data analysis:
+  - number of vacancies per company;
+  - full vacancy list (company name, position, salary, link);
+  - average salary;
+  - vacancies with above-average salary;
+  - keyword search (e.g. "Python").
+- Logic is split into modules under `src/`; database access is implemented with `psycopg2` and environment variables from `.env`.
+- Codebase is linted and formatted with `flake8`, `black`, `isort`, `mypy` and follows PEP 8.
+
+
 ## Project Description
 
 The application fetches job vacancies from the [hh.ru](https://hh.ru) platform and saves them to a JSON file.  
@@ -43,6 +73,36 @@ After that, it allows you to analyze the data using SQL queries.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## 🇷🇺 Описание (для резюме / портфолио)
+
+**Комплексная курсовая работа по обработке вакансий hh.ru (JSON + PostgreSQL)**  
+
+Два связанных проекта:
+
+### 1. Парсер вакансий hh.ru (ООП + JSON + тесты)
+
+- Клиент для работы с публичным API hh.ru.  
+- Получает вакансии и сохраняет их в JSON-файл.  
+- Позволяет:
+  - добавлять вакансии;
+  - искать вакансии по ключевым словам 🔎;
+  - удалять вакансии по ссылке.
+- Реализован с использованием принципов ООП (наследование, инкапсуляция, SOLID).
+- Покрыт автотестами на `pytest`.
+
+### 2. hh.ru Job Analyzer (PostgreSQL + Python)
+
+- Загружает вакансии от ~10 крупных работодателей через API hh.ru и сохраняет их в базу PostgreSQL.  
+- Использует класс `DBManager` для анализа данных:
+  - количество вакансий по компаниям;
+  - полный список вакансий (компания, должность, зарплата, ссылка);
+  - средняя зарплата;
+  - вакансии с зарплатой выше средней;
+  - поиск по ключевым словам (например, "Python").
+- Логика разнесена по модулям в папке `src/`, подключение к БД через `psycopg2` и переменные окружения `.env`.
+- Настроены линтеры и форматтеры: `flake8`, `black`, `isort`, `mypy`, код приведён к PEP 8.
+
+---
 
 # Курсовая работа: Работа с API hh.ru и JSON-файлом
 
