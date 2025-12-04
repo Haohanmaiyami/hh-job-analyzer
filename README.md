@@ -1,4 +1,4 @@
-# Vacancy parser: OOP-based service that scrapes job postings from popular aggregators and stores them in PostgreSQL for further analysis and reporting.
+
 
 ## Description (for CV / GitHub / LinkedIn)
 
@@ -29,6 +29,7 @@ Two related projects:
 - Logic is split into modules under `src/`; database access is implemented with `psycopg2` and environment variables from `.env`.
 - Codebase is linted and formatted with `flake8`, `black`, `isort`, `mypy` and follows PEP 8.
 
+# Vacancy parser: OOP-based service that scrapes job postings from popular aggregators and stores them in PostgreSQL for further analysis and reporting.
 
 ## Project Description
 
